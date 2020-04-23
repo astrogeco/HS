@@ -152,7 +152,7 @@ void HS_AppMain(void)
        */
        if (HS_AppData.CurrentEventMonState == HS_STATE_ENABLED)
        {
-          Status = CFE_SB_SubscribeEx(CFE_EVS_EVENT_MSG_MID,
+          Status = CFE_SB_SubscribeEx(CFE_EVS_EVENT_MSG_MSG,
                                       HS_AppData.EventPipe,
                                       CFE_SB_Default_Qos,
                                       HS_EVENT_PIPE_DEPTH);

@@ -2,7 +2,7 @@
 ** File:
 **   $Id: hs_events.h 1.2 2015/11/12 14:25:16EST wmoleski Exp  $
 **
-**   Copyright © 2007-2014 United States Government as represented by the 
+**   Copyright ï¿½ 2007-2014 United States Government as represented by the 
 **   Administrator of the National Aeronautics and Space Administration. 
 **   All Other Rights Reserved.  
 **
@@ -153,7 +153,7 @@
 **  \par Cause:
 **
 **  This event message is issued when the call to #CFE_SB_Subscribe
-**  for the #CFE_EVS_EVENT_MSG_MID, during initialization returns
+**  for the #CFE_EVS_EVENT_MSG_MSG, during initialization returns
 **  a value other than CFE_SUCCESS
 */
 #define HS_SUB_EVS_ERR_EID 7

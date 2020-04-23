@@ -2,7 +2,7 @@
 ** File:
 **   $Id: hs_cmds.c 1.4 2016/09/07 18:49:19EDT mdeschu Exp  $
 **
-**   Copyright © 2007-2016 United States Government as represented by the 
+**   Copyright ï¿½ 2007-2016 United States Government as represented by the 
 **   Administrator of the National Aeronautics and Space Administration. 
 **   All Other Rights Reserved.  
 **
@@ -464,7 +464,7 @@ void HS_EnableEventMonCmd(CFE_SB_MsgPtr_t MessagePtr)
        if (HS_AppData.CurrentEventMonState == HS_STATE_DISABLED)
        {
 
-          Status = CFE_SB_SubscribeEx(CFE_EVS_EVENT_MSG_MID,
+          Status = CFE_SB_SubscribeEx(CFE_EVS_EVENT_MSG_MSG,
                                       HS_AppData.EventPipe,
                                       CFE_SB_Default_Qos,
                                       HS_EVENT_PIPE_DEPTH);
@@ -513,7 +513,7 @@ void HS_DisableEventMonCmd(CFE_SB_MsgPtr_t MessagePtr)
        if (HS_AppData.CurrentEventMonState == HS_STATE_ENABLED)
        {
 
-          Status =  CFE_SB_Unsubscribe ( CFE_EVS_EVENT_MSG_MID,
+          Status =  CFE_SB_Unsubscribe ( CFE_EVS_EVENT_MSG_MSG,
                                          HS_AppData.EventPipe );
 
           if (Status != CFE_SUCCESS)
@@ -831,7 +831,7 @@ void HS_AcquirePointers(void)
 
             if (HS_AppData.CurrentEventMonState == HS_STATE_ENABLED)
             {
-                Status =  CFE_SB_Unsubscribe ( CFE_EVS_EVENT_MSG_MID,
+                Status =  CFE_SB_Unsubscribe ( CFE_EVS_EVENT_MSG_MSG,
                                                HS_AppData.EventPipe );
 
                 if (Status != CFE_SUCCESS)

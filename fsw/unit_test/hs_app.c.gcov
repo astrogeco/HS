@@ -154,7 +154,7 @@
         -:  150:       */
     #####:  151:       if (HS_AppData.CurrentEventMonState == HS_STATE_ENABLED)
         -:  152:       {
-    #####:  153:          Status = CFE_SB_SubscribeEx(CFE_EVS_EVENT_MSG_MID,
+    #####:  153:          Status = CFE_SB_SubscribeEx(CFE_EVS_EVENT_MSG_MSG,
     #####:  154:                                      HS_AppData.EventPipe,
         -:  155:                                      CFE_SB_Default_Qos,
         -:  156:                                      HS_EVENT_PIPE_DEPTH);
