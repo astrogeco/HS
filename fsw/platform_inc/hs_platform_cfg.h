@@ -269,7 +269,7 @@
 **       None.
 **
 */
-#define HS_CPU_ALIVE_STRING        "Howdy"
+#define HS_CPU_ALIVE_STRING        ""
 /* // const char *HS_CPU_ALIVE_STRING = "Howdy"; */
 /** \hscfg CPU aliveness output period
 **
